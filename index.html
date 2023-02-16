@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>🕮 App de tareas</title>
+</head>
+
+<body>
+    
+    
+    <header>
+        <h1>🕮 App de tareas</h1> 
+        <button id="btn-darkmode">🌚</button>               
+    </header>
+    
+        <button id="open-modal">Crear</button>
+    <section class="contain-modal">
+        <div class="modal">
+            <button id="close-modal">X</button>
+            <form class="form">                
+                <div>                
+                    <input name="input" id="title" type="text" placeholder="Titulo de tarea">
+                    <span id="titleErrors"></span>
+                </div>
+                <div>
+                    <select id="state">
+                        <option value="" disabled selected>Seleccione un estado</option>
+                        <option value="pendiente">Pendiente</option>
+                        <option value="enProgreso">En progreso</option>
+                        <option value="terminado">Terminado</option>
+                    </select>
+                    <span id="stateErrors"></span>       
+                </div>
+                <button type="submit" class="submit">Agregar</button>
+            </form>
+            </div>
+                <span id="formErrors"></span>
+            </div>
+        
+        </div>
+    </section>
+
+    <main>
+        <!-- <div class="cardColumns">  -->
+
+                <div class="btnFilter">
+                    <button class="filter">Pendientes</button>
+                
+            <!-- <div class="contain-tareas"> -->
+                    <section class="contain-pending">                    
+                        <div class="card">
+                            <!-- <p>Título: </p>
+                            <p>Estado: Pendiente</p>                 
+                            <button class="edit"> <img src="assets/edit.png" alt="" class="card-icon"></button>
+                            <button class="delete"> <img src="assets/trash.png" alt="" class="card-icon"></button> -->
+                        </div>
+                    </section>
+                </div>
+
+                <div class="btnFilter">
+                    <button class="filter">En progreso</button>
+                
+                    <section class="contain-inProgress">                    
+                        <div class="card">
+                            <!-- <p>Título: </p>
+                            <p>Estado: En progreso</p>                    
+                            <button class="edit"><img src="assets/edit.png" alt="" class="card-icon"></button>
+                            <button class="delete"><img src="assets/trash.png" alt="" class="card-icon"></button> -->
+                        </div>
+                    </section>
+                </div>
+                <div class="btnFilter">
+                    <button class="filter">Terminados</button>
+                
+                    <section class="contain-finished">                    
+                        <div class="card">
+                            <!-- <p>Título: </p>
+                            <p>Estado: Terminado</p>                    
+                            <button class="edit"><img src="assets/edit.png" alt="" class="card-icon"></button>
+                            <button class="delete"><img src="assets/trash.png" alt="" class="card-icon"></button> -->
+                        </div>
+                    </section> 
+                </div>       
+            </div>
+
+            
+    </main> 
+
+
+<script src="app.js"></script>
+</body>
+</html>
